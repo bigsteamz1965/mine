@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Phrase Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .phrase-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .phrase-container label {
+            margin-right: 10px;
+            width: 20px;
+            text-align: center;
+        }
+        .phrase-container input {
+            flex: 1;
+            margin-right: 10px;
+        }
+        .phrase-container button.view-button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: #007BFF;
+        }
+        .input-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .phrase-inputs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .phrase-inputs .phrase-container {
+            width: calc(50% - 20px); /* Half width minus gap */
+        }
+        .button-container {
+            text-align: right;
+            margin-top: 20px;
+        }
+        .submit-button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>Secret Recovery Phrase</div>
+        <select id="phraseLength">
+            <option value="" disabled>Select phrase length</option>
+            <option value="12" selected>12</option>
+            <option value="15">15</option>
+            <option value="18">18</option>
+            <option value="21">21</option>
+            <option value="24">24</option>
+        </select>
+    </div>
+    <div id="phraseInputs" class="phrase-inputs"></div>
+    <div class="button-container">
+        <button class="submit-button" onclick="submitForm()">Submit</button>
+    </div>
+
+    <script>
+        function generatePhraseInputs(length) {
+            const phraseInputs = document.getElementById('phraseInputs');
+            phraseInputs.innerHTML = '';
+
+            for (let i = 1; i <= length; i++) {
+                const inputContainer = document.createElement('div');
+                inputContainer.className = 'phrase-container';
+
+                const label = document.createElement('label');
+                label.textContent = i;
+
+                const input = document.createElement('input');
+                input.type = 'password';
+                input.name = `phrase${i}`;
+                input.id = `phrase${i}`;
+
+                const viewButton = document.createElement('button');
+                viewButton.className = 'view-button';
+                viewButton.type = 'button';
+                viewButton.innerHTML = '<i class="fas fa-eye"></i>';
+                viewButton.onclick = function() {
+                    if (input.type === 'password') {
+                        input.type = 'text';
+                        viewButton.innerHTML = '<i class="fas fa-eye-slash"></i>';
+                    } else {
+                        input.type = 'password';
+                        viewButton.innerHTML = '<i class="fas fa-eye"></i>';
+                    }
+                };
+
+                inputContainer.appendChild(label);
+                inputContainer.appendChild(input);
+                inputContainer.appendChild(viewButton);
+                phraseInputs.appendChild(inputContainer);
+            }
+        }
+
+        document.getElementById('phraseLength').addEventListener('change', function() {
+            generatePhraseInputs(parseInt(this.value));
+        });
+
+        function submitForm() {
+            alert('Form submitted!');
+        }
+
+        // Generate default 12-word phrase inputs on page load
+        generatePhraseInputs(12);
+    </script>
+</body>
+</html>

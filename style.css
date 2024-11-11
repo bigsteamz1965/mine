@@ -1,0 +1,451 @@
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0px;
+    font-family:sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    color: white;
+}
+.navbar{
+    background-color: #292929;
+    color: white;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    height: 62px;
+    justify-content:space-between;
+}
+.leftnavbar{
+    float: left;
+    margin-top: 13px;
+    margin-left: 14px;
+}
+@media screen and (max-width: 767px) {
+    .leftnavbar{
+        margin-top: 7px;
+    }
+}
+.navbar h1{
+    font-size: 16px;
+    font-weight: 600;
+}
+.othernav{
+    text-align: center;
+    margin-top: 15px;
+    width: 100px;
+}
+@media screen and (max-width: 767px) {
+    .othernav{
+        display: none;
+    }
+}
+a{
+    text-decoration: none;
+}
+
+
+
+.topics{
+    display: flex;
+    font-size: 17px;
+    justify-content: center;
+    min-width: 80%;
+    margin-top: 40px;
+}
+@media screen and (max-width: 767px) {
+    .topics{
+        font-size: 15px;
+        margin-left: 2px;
+        margin-right: 2px
+    }
+}
+.topic1{
+    color: white;
+    padding: 10px;
+    border-bottom: 2px solid rgb(72, 71, 71);
+}
+
+.topic2{
+    color: white;
+    padding: 10px;
+    border-bottom: 2px solid rgb(72, 71, 71);
+}
+
+.topic3{
+    color: white;
+    padding: 10px;
+    border-bottom: 2px solid rgb(72, 71, 71);
+}
+
+.active{
+    color: rgb(255, 34, 255);
+    padding: 10px;
+    border-bottom: 2px solid rgb(255, 34, 255);
+}
+
+
+.topform{
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+}
+.forme{
+    background-color: #313131;
+    width: 460px;
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: -18px;
+}
+@media screen and (max-width: 767px) {
+    .forme{
+        width: 360px;
+        padding: 15px;
+    }
+} 
+.ff{
+    font-size: 24px;
+    color: white;;
+    text-align: center;
+    margin-top: -5px;
+    margin-bottom: 25px;
+}
+@media screen and (max-width: 767px) {
+    .ff{
+        margin-top: 5px;
+    }
+} 
+input[type="email"], textarea{
+    padding: 10px;
+    width: 400px;
+    height: 50px;
+    background-color: transparent;
+    color: #333;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 34, 255);
+    align-items: center;
+    color: white;;
+}
+@media screen and (max-width: 767px) {
+    input[type="email"]{
+        width: 330px;
+    }
+} 
+@media screen and (max-width: 767px) {
+  textarea{
+       height: 200px;
+       width: 330px;
+    }
+} 
+#Wallet{
+    padding: 10px;
+    width: 400px;
+    height: 50px;
+    background-color: transparent;
+    color: #333;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 34, 255);
+    align-items: center;
+    color: white;;
+}
+@media screen and (max-width: 767px) {
+    #Wallet{
+        width: 340px;
+    }
+} 
+option{
+    padding: 10px;
+    width: 400px;
+color: white;;
+}
+
+label{
+    color: white;;
+    font-size: 16px;
+}
+::placeholder{
+    color: white;;
+    margin-left: 14px;
+}
+.forme button{
+    background-color: rgb(109, 2, 190);
+    color: white;;
+    border-radius: 15px;
+    width: 400px;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    margin-top: 15px;
+    padding: 10px;
+}
+@media screen and (max-width: 767px) {
+    .forme button{
+        width: 331px;
+    }
+} 
+.footer{
+    width: 100%;
+    height: 120px;
+    justify-content: space-between;
+    bottom: 0px;
+    background-color: #292929;
+    color: white;;
+    position: fixed;
+}
+@media screen and (max-width: 767px) {
+    .footer {
+      width: 100%;
+      margin-bottom: 0px;
+      background-color: #292929;
+      height: max-content;
+    }
+  }
+.foot{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+@media screen and (max-width: 767px) {
+    .foot{
+       flex-direction: column;
+       justify-content: left;
+       float: left;
+    }
+} 
+.leftfooter{
+    float: left;
+    margin-top: 6px;
+    margin-left: 14px;
+}
+@media screen and (max-width: 767px) {
+    .leftfooter{
+       float: left;
+    }
+}
+.footer h1{
+    font-size: 13px;
+}
+.otherfooter{
+    text-align: center;
+    margin-top: 15px;
+    width: max-content;
+    margin-left: 20px;
+}
+@media screen and (max-width: 767px) {
+    .foo{
+        background-color: red;
+        font-size: 15px;
+        height: 25px;
+        margin-left: 70px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .foo{
+        margin-left: 0px;
+        color: white;
+    }
+}
+.crypto{
+    background-color: #292929;
+    border-radius: 10px;
+    width: 150px;
+    align-items: center;
+    text-align: center;
+    padding: 6px;
+    margin-bottom: 60px;
+}
+.crypto h2{
+    font-size: 22px;
+    color: white;;
+}
+.crypto img{
+    filter: grayscale(100%);
+}
+.crypto img:hover{
+    filter: grayscale(0%);
+    animation-delay: 4s;
+}
+.navbar-toggler{
+    color: white;;
+}
+@media screen and (max-width: 767px) {
+    .topic3, .topic2, .topic1{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 767px) {
+    .active{
+        text-align: center;
+    }
+}
+.container {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 25px;
+    height: 4px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  .navbtn{
+    border: 2px solid #333;
+    float: right;
+    margin-right: 20px;
+    border-radius: 5px;
+  }
+  @media screen and (min-width:1200px ){
+    .navbtn{
+        display: none;
+    }
+  }
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+select{
+    width: 240px;
+    color: white;;
+    padding: 6px;
+    background-color: transparent;
+    border: 2px solid rgb(72, 71, 71);
+    border-radius: 5px;
+  }
+  @media screen and (max-width: 767px)  {
+  select{
+    padding: 2px;
+    width: 160px;
+    }
+  }
+  select option{
+    color: white;
+  }
+  #network{
+    margin-top: 0px;
+  }
+
+  #networkk{
+    display: none;
+  }
+  @media screen and (max-width: 767px)  {
+    #networkk{
+        display: block;
+        margin-right: 10px;
+    }
+  }
+  .note{
+    width: max-content;
+    color: white;;
+    padding: 6px;
+    background-color:rgba(64, 64, 115, 0.486);
+    border: 2px solid rgb(50, 131, 245);
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 15px;
+  }
+@media screen and (max-width: 767px) {
+.note{
+width: 300px;
+}
+}
+  input[type="text"]{
+    width: 240px;
+    color: white;;
+    padding: 6px;
+    background-color: transparent;
+    border: 2px solid rgb(72, 71, 71);
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  input[type="text"]{
+    width: 240px;
+    color: white;;
+    padding: 6px;
+    background-color: transparent;
+    border: 2px solid rgb(72, 71, 71);
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+
+  .blag button[type="submit"]{
+    width: 240px;
+    color: white;;
+    padding: 6px;
+    background-color:rgb(50, 131, 245) ;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+
+  #seeMoreButton{
+    width: 70px;
+    color: white;;
+    padding: 6px;
+    background-color:rgb(50, 131, 245) ;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  .btnreturn{
+    width: 70px;
+    color: white;
+    padding: 6px;
+    background-color:rgb(50, 131, 245) ;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  .btnreturn a{
+    color: white;;
+  }
+
+  .top-of-form {
+    display: flex;
+    justify-content: space-around;
+    
+  }
+
+  .icon {
+    display: flex;
+    color: white;
+    box-shadow: 0px 4px 6px gray;
+    padding: 5px 10px 5px 10px;
+    align-items: center;
+    width: 300px;
+  }
+  @media screen and (max-width: 767px) {
+     .top-of-form {
+        flex-direction: column;
+        align-items: center;
+    }
+    .icon {
+        margin-top: 15px;
+    }
+  }
+    .icon .icon-left {
+        margin-left: 20px;
+    }
+  .icon .icon-left img {
+    width: 50px;
+    height: 50px;
+  }
+  .icon .icon-right {
+    margin-left: 10px; 
+  }
+  .icon .icon-right h2 {
+    font-size: 20px;
+  }
+  .icon .icon-right p {
+    font-size: 14px;
+    color: gray;
+    margin-top: -6px;
+  }

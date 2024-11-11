@@ -1,0 +1,369 @@
+@media screen and (min-width: 1200px) {
+  body {
+    background-color: white;
+    margin: 0;
+    padding: 0px;
+    font-family: sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    color: black;
+    text-align: center;
+    transition: background-color 0.5s, color 0.5s;
+    overflow-x: hidden;
+  }
+}
+body {
+  background-color: rgb(2, 26, 43);
+}
+@media screen and (max-width: 767px) {
+  body {
+    background-color: rgb(2, 26, 43);
+    margin: 0;
+    padding: 0px;
+    font-family: sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    overflow-x: hidden;
+    text-align: center;
+  }
+}
+body.light-mode {
+  background-color: #ffffff;
+  color: #000000 !important;
+}
+
+body.dark-mode {
+  background-color: #000000;
+  color: #ffffff !important;
+}
+
+body.light-mode .theme-toggle {
+  background-image: linear-gradient(to top, blue, green);
+  color: white;
+}
+body.dark-mode .theme-toggle {
+  background-color: white;
+  color: black;
+}
+.theme-toggle {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  text-align: center;
+  padding: 5px 5px 5px 5px;
+}
+@media screen and (max-width: 767px) {
+  .theme-toggle {
+display: none;
+  }
+  .navbar-left img {
+    height: 40px;
+    margin-right: -12px;
+  }
+  .navbar-left h1 {
+    font-size: 15px;
+    margin-top: 30px;
+    margin-left: -20px;
+  }
+  .navbar-right {
+    float: right;
+    margin-right: -90px;
+  }
+}
+.fa-sun {
+  font-size: 25px;
+  padding: 5px;
+}
+.fa-moon {
+  font-size: 25px;
+  padding: 5px;
+}
+.theme-icon {
+  width: 30px;
+  height: 30px;
+}
+
+body.light-mode a {
+  text-decoration: none;
+  color: black;
+}
+.navbar-left h1 {
+  margin-left: 20px;
+}
+body.dark-mode a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-left {
+  display: flex;
+}
+.navbar-left img {
+  margin-top: 18px;
+  margin-left: 20px;
+}
+.navbar-right {
+  display: flex;
+  justify-content: space-between;
+}
+
+.validation {
+  margin-top: 11px;
+  margin-right: 120px;
+  display: flex;
+  border-radius: 20px;
+  color: rgb(77, 76, 76);
+  padding: 5px 20px 5px 20px;
+  height: 38px;
+}
+
+.validation h1 {
+  font-size: 16px;
+}
+
+.dot {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  margin-top: 14px;
+  margin-right: 6px;
+}
+.text {
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  text-align: left;
+}
+@media screen and (max-width: 767px) {
+  .text {
+    width: 90%;
+    margin-top: -30px;
+  }
+  .text h1 {
+    font-size: 22px;
+  }
+  .text p {
+    font-size: 11px;
+  }
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 8px;
+  }
+  .header h1 {
+    font-size: 13px;
+    width: max-content;
+    margin-left: 20px;
+  }
+  input {
+    width: 80px;
+    height: 26px;
+    margin-left: -10px;
+    background-color: transparent;
+    padding: 2px;
+    border-radius: 10px;
+    border: 1px solid gray;
+  }
+  .message {
+    width: 300px;
+    padding: 10px 5px 10px 5px;
+    background-color: rgba(0, 0, 255, 0.342);
+    border-radius: 10px;
+    border: 1px solid blue;
+    margin-bottom: 15px;
+    color: white;
+    font-size: 10px;
+    margin-top: -5px;
+  }
+  body.light-mode .message {
+    color: black;
+    background-color: rgba(0, 0, 255, 0.082);
+  }
+  .header select {
+    margin-right: 20px;
+    font-size: 12px;
+    padding: 5px 5px 5px 5px;
+    height: 32px;
+    width: max-content;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: white;
+  }
+  .validation select {
+    margin-right: -20px;
+    font-size: 13px;
+    padding: 5px;
+    height: max-content;
+    width: 150px;
+    border-radius: 20px;
+  }
+  body.dark-mode select {
+    color: black;
+  }
+  body.dark-mode select option {
+    color: black;
+    font-size: 16px;
+    padding: 5px;
+  }
+  .fa-eye-slash {
+    font-size: 15px;
+    margin-left: -12px;
+  }
+  .fa-eye {
+    font-size: 15px;
+    margin-left: -12px;
+  }
+  label {
+    font-size: 13px;
+    margin-left: -18px;
+  }
+  .submit-button {
+    padding: 15px 40px 15px 40px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    float: left;
+    border-radius: 20px;
+    font-size: 18px;
+    margin-left: 20px;
+  }
+}
+.update {
+  color: black;
+}
+body.dark-mode select option {
+  color: black;
+  font-size: 16px;
+  padding: 5px;
+}
+@media screen and (min-width: 1200px) {
+  .text h1 {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 50%;
+  }
+  .header h1 {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  select {
+    padding: 10px 65px 10px 10px;
+  }
+}
+select {
+  border-radius: 10px;
+  border: 2px solid gray;
+  background-color: transparent;
+}
+body.dark-mode select {
+  color: white;
+}
+@media screen and (min-width: 1200px) {
+input {
+  background-color: transparent;
+  padding: 10px 65px 10px 10px;
+  border-radius: 10px;
+  border: 2px solid gray;
+}
+}
+body.dark-mode input {
+  color: white;
+}
+
+.phrase-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.phrase-container label {
+  margin-right: 10px;
+  width: 20px;
+  text-align: center;
+}
+.phrase-container input {
+  flex: 1;
+  margin-right: 10px;
+}
+.phrase-container button.view-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: black;
+}
+body.dark-mode .phrase-container button.view-button {
+  color: white;
+}
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.phrase-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+@media screen and (min-width: 1200px) {
+form {
+  width: 70%;
+  align-items: center;
+}
+}
+@media screen and (max-width: 767px) {
+  form {
+    width: 100%;
+  }
+}
+.button-container {
+  text-align: right;
+  margin-top: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .submit-button {
+    padding: 15px 40px 15px 40px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    float: left;
+    border-radius: 20px;
+    font-size: 18px;
+    margin-left: 80px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .message {
+    background-color: rgba(0, 0, 255, 0.342);
+    border-radius: 10px;
+    border: 2px solid blue;
+    padding: 10px 15px 10px 15px;
+    border-radius: 10px;
+    color: white;
+    width: max-content;
+    margin-bottom: 15px;
+  }
+}
